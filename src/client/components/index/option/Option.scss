@@ -1,0 +1,18 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-option {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: $one-z-index;
+        width: 310px;
+        height: calc(100vh - 66px);
+        background-color: $white;
+        box-shadow: 2px 0 3px $shadow-color;
+
+        &.unfold {
+            width: 730px;
+        }
+    }
+}

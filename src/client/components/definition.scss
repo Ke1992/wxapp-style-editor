@@ -1,0 +1,18 @@
+// z-index
+$one-z-index                : 1;                      // 基础z-index值
+$header-z-index             : 2;                      // header级别的z-ndex值
+$mask-z-index               : 101;                    // 蒙层级别的z-index值
+
+// Color
+$primary-color              : #687fd3;              // 主要色值
+$primary-color-light        : #758ad7;              // 主要色值--淡
+$primary-color-thin         : #8899d6;              // 主要色值--极淡
+$white                      : #fff;                 // 白色
+$shadow-color               : rgba(0, 0, 0, 0.15);  // 阴影色值
+$font-color                 : #888;                 // 字体颜色
+$border-color               : #ededed;              // 边框颜色
+
+// Base
+$font-size-base             : 14px;
+$font-size-small            : 12px;
+$font-size-large            : 16px;

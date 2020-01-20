@@ -1,0 +1,52 @@
+@import '../definition.scss';
+
+.tangram {
+    &-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 66px;
+        height: 100%;
+        padding-top: 66px;
+        background-color: #f1f1f2;
+        box-shadow: 2px 0 3px $shadow-color;
+
+        ul {
+            position: relative;
+            height: calc(100% - 66px);
+        }
+
+        li {
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+            cursor: pointer;
+            text-align: center;
+
+            &.cur,
+            &:hover {
+                color: $primary-color;
+                background-color: $white;
+            }
+
+            &.cur::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4px;
+                height: 100%;
+                background-color: $primary-color;
+            }
+        }
+
+        &-icon {
+            font-size: $font-size-small * 2;
+        }
+
+        &-tips {
+            font-size: $font-size-small;
+            line-height: 20px;
+        }
+    }
+}

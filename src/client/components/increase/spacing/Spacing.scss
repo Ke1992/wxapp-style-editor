@@ -1,0 +1,14 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-spacing {
+        position: relative;
+        width: 105px;
+        height: 100%;
+        display: flex;
+        color: $primary-color-light;
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+    }
+}

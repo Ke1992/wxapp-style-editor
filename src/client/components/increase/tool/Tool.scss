@@ -1,0 +1,57 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-tool {
+        position: absolute;
+        top: -66px;
+        z-index: $header-z-index;
+        width: 100%;
+        height: 66px;
+        display: flex;
+        padding-left: 310px;
+        box-sizing: border-box;
+
+        &-btns {
+            flex: 1;
+            text-align: right;
+            padding: 17px 20px 18px;
+
+            &-mobile,
+            &-miniprograms {
+                width: 120px;
+                font-size: $font-size-base;
+                cursor: pointer;
+                margin-right: 20px;
+                text-align: center;
+                border-radius: 4px;
+                display: inline-block;
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+
+            &-mobile {
+                height: 28px;
+                line-height: 28px;
+                font-weight: bold;
+                border: 2px solid;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            &-miniprograms {
+                height: 32px;
+                color: $white;
+                line-height: 32px;
+                background-color: $primary-color;
+
+                &:hover {
+                    background-color: $primary-color-light;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-main {
+        &-dialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: $mask-z-index;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            &-table {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                td {
+                    vertical-align: inherit;
+                }
+            }
+
+            &-content {
+                width: 370px;
+                margin: auto;
+                display: table;
+                text-align: left;
+                border-radius: 4px;
+                padding: 10px 50px 20px;
+                background-color: $white;
+
+                ul {
+                    width: 100%;
+                    padding-top: 10px;
+                }
+
+                li {
+                    width: 100%;
+                    height: 30px;
+                    font-size: $font-size-small;
+                    display: flex;
+                    cursor: pointer;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid $border-color;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    span {
+                        position: relative;
+                        width: 30px;
+                        height: 30px;
+
+                        &::before {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            content: "";
+                            width: 6px;
+                            height: 6px;
+                            margin-top: -3px;
+                            margin-left: -3px;
+                            border-radius: 6px;
+                            background-color: $font-color;
+                        }
+                    }
+
+                    div {
+                        width: 334px;
+                        height: 30px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    &.cur,
+                    &:hover {
+                        border-color: $primary-color;
+
+                        span {
+                            &::before {
+                                background-color: $primary-color;
+                            }
+                        }
+
+                        div {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            &-title {
+                position: relative;
+                line-height: 50px;
+                font-weight: bold;
+                color: $primary-color;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 15px;
+                    left: -16px;
+                    width: 4px;
+                    height: 20px;
+                    border-radius: 4px;
+                    background-color: $primary-color;
+                }
+            }
+
+            &-btns {
+                width: 100%;
+                text-align: right;
+                padding: 20px 0 0 0;
+            }
+
+            &-cancel,
+            &-confirm {
+                height: 32px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: $font-size-base;
+                min-width: 100px;
+            }
+
+            &-cancel {
+                color: $font-color;
+                margin-right: 10px;
+
+                &:hover {
+                    color: $primary-color-light;
+                }
+            }
+
+            &-confirm {
+                color: $white;
+                background-color: $primary-color;
+
+                &:hover {
+                    background-color: $primary-color-light;
+                }
+            }
+        }
+    }
+}

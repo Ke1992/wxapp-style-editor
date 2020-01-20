@@ -1,0 +1,92 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-keyin {
+        width: 640px;
+        height: 100%;
+        padding: 0 30px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        background-color: $white;
+        box-shadow: 0 2px 8px $shadow-color;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &-title {
+            position: relative;
+            width: 100%;
+            height: 24px;
+            color: $primary-color;
+            line-height: 24px;
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 10px;
+
+            i {
+                cursor: pointer;
+                margin-left: 10px;
+
+                &:hover {
+                    color: $primary-color-light;
+                }
+            }
+
+            &-preview {
+                position: absolute;
+                top: 20px;
+                right: 0;
+                height: 24px;
+                color: $font-color;
+                cursor: pointer;
+                font-size: $font-size-small;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        &-item {
+            width: 100%;
+            display: flex;
+            line-height: 46px;
+            font-size: $font-size-base;
+
+            &-left {
+                width: 90px;
+                height: 46px;
+            }
+
+            &-right {
+                width: 490px;
+                font-size: $font-size-base;
+                min-height: 46px;
+
+                input {
+                    width: 100%;
+                    height: 30px;
+                    color: $font-color;
+                    text-indent: 10px;
+                    box-sizing: border-box;
+                }
+
+                .CodeMirror {
+                    height: 200px;
+                    line-height: normal;
+
+                    &-vscrollbar {
+                        display: none !important;
+                    }
+                }
+
+                &.code {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

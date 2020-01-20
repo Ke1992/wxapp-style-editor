@@ -1,0 +1,36 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-preview {
+        width: 375px;
+        height: 100%;
+        box-shadow: 0 2px 8px $shadow-color;
+
+        &-wrap {
+            width: 200%;
+            height: 200%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            background-color: $white;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &-top-bar {
+            width: 100%;
+            height: 128px;
+            display: block;
+        }
+
+        &-demo {
+            position: relative;
+            width: 750px;
+            min-height: calc(100% - 128px);
+            transform: scale(1);
+        }
+    }
+}

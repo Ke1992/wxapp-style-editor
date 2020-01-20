@@ -1,0 +1,33 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-main {
+        &-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            &-vertical,
+            &-horizontal {
+                position: absolute;
+                top: 0;
+                color: #419bf9;
+                box-sizing: border-box;
+            }
+
+            &-vertical {
+                height: 100%;
+                border-left: 2px dashed;
+                border-right: 2px dashed;
+            }
+
+            &-horizontal {
+                width: 100%;
+                border-top: 2px dashed;
+                border-bottom: 2px dashed;
+            }
+        }
+    }
+}

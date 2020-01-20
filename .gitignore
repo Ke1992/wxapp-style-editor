@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+# 自定义
+app.js
+package-lock.json
+/dao/
+/public/
+/router/
+/shared/

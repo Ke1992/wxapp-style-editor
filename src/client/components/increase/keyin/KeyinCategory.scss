@@ -1,0 +1,33 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-keyin {
+        &-category {
+            overflow: hidden;
+            padding-bottom: 4px;
+
+            ul {
+                width: 504px;
+            }
+
+            li {
+                position: relative;
+                float: left;
+                width: 110px;
+                height: 30px;
+                cursor: pointer;
+                font-size: $font-size-small;
+                line-height: 30px;
+                text-align: center;
+                margin: 8px 14px 8px 0;
+                border: 1px solid $border-color;
+
+                &.cur,
+                &:hover {
+                    color: $primary-color;
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+}

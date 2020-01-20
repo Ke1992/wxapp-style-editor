@@ -1,0 +1,59 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-keyin {
+        &-upload {
+            display: flex;
+            overflow: hidden;
+
+            &-btn {
+                position: relative;
+                width: 110px;
+                height: 30px;
+                color: $white;
+                cursor: pointer;
+                font-size: $font-size-small;
+                line-height: 30px;
+                text-align: center;
+                margin: 8px 14px 8px 0;
+                background-color: $primary-color;
+                border: 1px solid $primary-color;
+
+                i {
+                    padding-right: 10px;
+                }
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    font-size: 0;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    background-color: $primary-color-light;
+                }
+
+                &.clear {
+                    color: $font-color;
+                    border-color: $border-color;
+                    background-color: $white;
+
+                    &:hover {
+                        color: $primary-color;
+                        border-color: $primary-color;
+                    }
+                }
+            }
+
+            &-image {
+                height: 46px;
+                cursor: pointer;
+            }
+        }
+    }
+}

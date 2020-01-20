@@ -1,0 +1,12 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-main {
+        position: relative;
+        top: 40px;
+        margin: auto;
+        width: 1120px;
+        display: flex;
+        height: calc(100vh - 66px - 80px);
+    }
+}

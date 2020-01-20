@@ -1,0 +1,9 @@
+@import '../definition.scss';
+
+.tangram {
+    &-container {
+        position: relative;
+        height: calc(100vh - 66px);
+        margin-left: 66px;
+    }
+}

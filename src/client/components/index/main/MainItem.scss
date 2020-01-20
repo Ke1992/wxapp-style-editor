@@ -1,0 +1,56 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-main {
+        &-item {
+            position: absolute;
+            cursor: pointer;
+            box-sizing: border-box;
+
+            &:hover {
+                border: 2px solid #419bf9;
+            }
+
+            &.selected {
+                border: 2px solid #ee6723;
+
+                div {
+                    display: block;
+                }
+            }
+
+            &-top-left,
+            &-top-right,
+            &-bottom-left,
+            &-bottom-right {
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                display: none;
+                border-radius: 50%;
+                background-color: $white;
+                border: 2px solid #ee6723;
+            }
+
+            &-top-left {
+                top: -5px;
+                left: -5px;
+            }
+
+            &-top-right {
+                top: -5px;
+                right: -5px;
+            }
+
+            &-bottom-left {
+                bottom: -5px;
+                left: -5px;
+            }
+
+            &-bottom-right {
+                bottom: -5px;
+                right: -5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import '../../definition.scss';
+
+.tangram {
+    &-editor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: $one-z-index;
+        width: 310px;
+        height: calc(100vh - 66px);
+        font-size: $font-size-small;
+        background-color: $white;
+        transform: translate(310px, 0);
+        transition: transform 0.25s linear;
+        box-shadow: -2px 0 3px $shadow-color;
+
+        &.show {
+            transform: translate(0, 0);
+        }
+
+        &-title {
+            width: 100%;
+            height: 60px;
+            font-weight: bold;
+            line-height: 60px;
+            text-align: center;
+
+            span {
+                padding: 0 20px 5px 20px;
+                border-bottom: 2px solid $primary-color;
+            }
+        }
+
+        ul {
+            height: calc(100% - 60px - 60px);
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &-btns {
+            height: 32px;
+            padding: 14px 0;
+
+            &-apply {
+                margin: auto;
+                width: 120px;
+                height: 28px;
+                color: $primary-color;
+                font-size: $font-size-base;
+                cursor: pointer;
+                font-weight: bold;
+                line-height: 28px;
+                border: 2px solid;
+                text-align: center;
+                border-radius: 4px;
+
+                &:hover {
+                    color: $primary-color-thin;
+                }
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

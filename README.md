@@ -10,12 +10,16 @@
 * 支持小程序和H5代码导出
 # UI页面
 ### 在线编辑
-![blockchain](https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/modify.gif "modify")
+<img src="https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/modify.gif" width="800" alt="modify" />
+
 ### 导出小程序代码
-![blockchain](https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/miniprogram.gif "miniprogram")
+<img src="https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/miniprogram.gif" width="800" alt="miniprogram" />
+
 ### 导出H5代码
-![blockchain](https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/mobile.gif "mobile")
+<img src="https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/mobile.gif" width="800" alt="mobile" />
+
 ### 编辑与导出联动
-![blockchain](https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/combine.gif "combine")
+<img src="https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/combine.gif" width="800" alt="combine" />
+
 # 录入页面
-![blockchain](https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/update.gif "update")
+<img src="https://raw.githubusercontent.com/Ke1992/wxapp-style-editor/master/docs/assets/update.gif" width="800" alt="update" />
